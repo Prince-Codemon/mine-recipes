@@ -4,7 +4,7 @@
   "description": "Mine Recipes: Find Recipes is a user-friendly app designed to make discovering and exploring new recipes a delightful experience. With an extensive collection of culinary creations from around the world, Mine Recipes offers a one-stop destination for food enthusiasts to explore, experiment, and satisfy their gastronomic cravings.",
   "icons": [
     {
-      "src": "logo.ico",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon",
       "purpose": "maskable"
