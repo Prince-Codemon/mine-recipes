@@ -1,0 +1,35 @@
+{
+  "short_name": "Mine Recipe",
+  "name": "Mine Recipe : Find Recipes",
+  "description": "Mine Recipe: Find Recipes is a user-friendly app designed to make discovering and exploring new recipes a delightful experience. With an extensive collection of culinary creations from around the world, Mine Recipe offers a one-stop destination for food enthusiasts to explore, experiment, and satisfy their gastronomic cravings.",
+  "icons": [
+    {
+      "src": "logo.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "author": "Prince Codemon",
+  "version": "1.0.0",
+  "categories": ["food", "travel"],
+  "keywords": ["recipe", "app", "food", "travel", "breakfast"],
+  "permissions": ["storage", "webNavigation"],
+  "languages": ["en", "fr", "es"]
+}
