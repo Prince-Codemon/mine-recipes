@@ -4,7 +4,6 @@ import {BsFillEmojiHeartEyesFill, BsPencil, BsSearch} from 'react-icons/bs';
 import { GiCookingPot } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 
-import './landing.css'
 const Landing = () => {
     const scrollToBottom = ()=>{
         window.scrollTo(0,document.body.scrollHeight, 'smooth');
@@ -12,14 +11,7 @@ const Landing = () => {
   return (
     <div className="space-y-40 mb-20">
       <div className="relative" id="home">
-        <div className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 ">
-          <div className="blur-[106px] h-56 bg-gradient-to-br  to-purple-400 from-rose-700"></div>
-          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-pink-600"></div>
-        </div>
-        <div class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40">
-          <div class="blur h-56 bg-gradient"></div>
-          <div class="blur h-32 bg-gradient"></div>
-        </div>
+        
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
           <div className="relative pt-36 ml-auto">
