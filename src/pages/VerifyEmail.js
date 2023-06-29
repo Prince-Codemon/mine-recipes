@@ -26,7 +26,11 @@ const VerifyEmail = () => {
     }
   }, [data, error,navigate]);
   if (result.isLoading) {
-    return <Spinner />;
+    return (
+      <div className="flex flex-col items-center justify-center h-screen">
+        <Spinner />
+      </div>
+    )
   }
 
   return <div>
@@ -35,7 +39,7 @@ const VerifyEmail = () => {
       <h1 className="text-3xl font-bold text-gray-900">Verifying Email</h1>
       <p className="text-gray-500">Please wait...</p>
     </div>
-    
+
     
     </div>;
 };
