@@ -65,7 +65,7 @@ const Recipes = () => {
             <label htmlFor="table-search" className="sr-only">
               Search
             </label>
-            <div className="relative">
+            <div className="relative w-full md:max-w-sm">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
                   className="w-5 h-5 text-rose-600"
@@ -90,7 +90,7 @@ const Recipes = () => {
               />
             </div>
 
-            <div className="relative ml-4 w-3/4 flex items-center justify-start md:justify-end ">
+            <div className="relative ml-0 md:ml-4 w-3/4 flex items-center justify-start md:justify-end ">
               <label
                 htmlFor="category"
                 className="leading-7 text-sm text-white mr-2 text-left font-bold"

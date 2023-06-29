@@ -243,7 +243,7 @@ const Profile = () => {
                     )}
                   </tbody>
                 </table>
-                {/* <!-- Edit user modal --> */}\
+                {/* <!-- Edit user modal --> */}
               </div>
 
               {/* <!-- End of post tab --> */}

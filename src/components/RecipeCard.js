@@ -35,7 +35,7 @@ const RecipeCard = ({ recipe }) => {
   return (
     <div
       to={`/recipe/${_id}`}
-      className="p-4 w-full min-w-[260px]  md:max-w-sm max-w-[300px] "
+      className="p-4 w-full min-w-[260px]  md:max-w-sm max-w-[340px] "
     >
      
       <div className="bg-white rounded-md overflow-hidden relative shadow-md flex flex-col justify-between h-full ">
