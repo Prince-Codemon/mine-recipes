@@ -142,8 +142,8 @@ const Recipe = () => {
     <section className="text-gray-600 body-font">
       {title && (
         <RHelmet
-          title={title}
-          content={desc}
+          title={title + " : Mine Recipes"}
+          content={desc + " : Mine Recipes"}
           image={image}
           creator={creator?.username}
         />
@@ -262,11 +262,16 @@ const Recipe = () => {
                 >
                   <TelegramIcon size={28} />
                 </TelegramShareButton>
-                <BiCopy className="cursor-pointer text-rose-500" size={28} onClick={()=>{
-                  navigator.clipboard.writeText(`${process.env.REACT_APP_BASE_URL}/recipe/${id}`)
-                  toast.success("Link copied to clipboard")
-                }} />
-
+                <BiCopy
+                  className="cursor-pointer text-rose-500"
+                  size={28}
+                  onClick={() => {
+                    navigator.clipboard.writeText(
+                      `${process.env.REACT_APP_BASE_URL}/recipe/${id}`
+                    );
+                    toast.success("Link copied to clipboard");
+                  }}
+                />
               </div>
               <div className="flex justify-between items-end w-full">
                 {creator && (

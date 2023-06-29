@@ -26,7 +26,6 @@ const RHelmet = ({ title, content, image, creator }) => {
       <meta name="twitter:image" content={image} />
       <meta name="twitter:label1" content="Written by" />
       <meta name="twitter:data1" content={creator} />
-
       <meta property="og:title" content={title} />
       <meta property="og:description" content={content} />
       <meta property="og:image" content={image} />
