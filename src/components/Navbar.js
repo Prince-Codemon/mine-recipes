@@ -25,7 +25,7 @@ const Navbar = () => {
                   to={"/"}
                   className="flex items-center py-4 px-2 font-bold"
                 >
-                  Mine <span className="text-rose-500">Recipe</span>
+                  Mine <span className="text-rose-500">Recipes</span>
                 </Link>
               </div>
             </div>

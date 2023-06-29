@@ -35,6 +35,7 @@ import views from "../utils/views";
 import { BsBookmark, BsBookmarkFill } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import { toast } from "react-hot-toast";
+import { BiCopy } from "react-icons/bi";
 
 const Recipe = () => {
   window.scrollTo(0, 0);
@@ -261,6 +262,11 @@ const Recipe = () => {
                 >
                   <TelegramIcon size={28} />
                 </TelegramShareButton>
+                <BiCopy className="cursor-pointer text-rose-500" size={28} onClick={()=>{
+                  navigator.clipboard.writeText(`${process.env.REACT_APP_BASE_URL}/recipe/${id}`)
+                  toast.success("Link copied to clipboard")
+                }} />
+
               </div>
               <div className="flex justify-between items-end w-full">
                 {creator && (

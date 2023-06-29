@@ -4,12 +4,12 @@ import LOGO from "../logo.png";
 const RHelmet = ({ title, content, image, creator }) => {
   return (
     <Helmet>
-      <link rel="icon" href={image || LOGO} />
       <title>{title}</title>
       {content && <meta name="description" content={content} />}
       {image && <meta property="og:image" content={image} />}
       {creator && <meta property="og:creator" content={creator} />}
       {creator && <meta name="author" content={creator} />}
+      {!image && <link rel="icon" href={LOGO} />}
       <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={content} />

@@ -52,9 +52,9 @@ const Recipes = () => {
   return (
     <>
       <RHelmet
-        title={"Mine Recipe : Find Recipes"}
+        title={"Mine Recipes : Find Recipes"}
         content={
-          "Mine Recipe: Find Recipes is a user-friendly website designed to make discovering and exploring new recipes a delightful experience. With an extensive collection of culinary creations from around the world, Mine Recipe offers a one-stop destination for food enthusiasts to explore, experiment, and satisfy their gastronomic cravings."
+          "Mine Recipes: Find Recipes is a user-friendly website designed to make discovering and exploring new recipes a delightful experience. With an extensive collection of culinary creations from around the world, Mine Recipes offers a one-stop destination for food enthusiasts to explore, experiment, and satisfy their gastronomic cravings."
         }
       />
       <Landing/>

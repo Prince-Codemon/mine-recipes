@@ -10,7 +10,7 @@ const Footer = () => {
         <span className="text-sm  sm:text-center text-white">
           © 2023{" "}
           <Link to={"/"} className="hover:underline">
-            MineRecipe™
+            MineRecipes™
           </Link>
           . All Rights Reserved.
         </span>

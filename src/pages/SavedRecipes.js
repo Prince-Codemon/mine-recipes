@@ -8,7 +8,7 @@ const SavedRecipes = () => {
   const { data, error } = useSavedRecipesQuery();
   useEffect(() => {
     if (error) {
-      toast.error(error.message || "something went wrong");
+      toast.error(error.message || "Something went wrong");
       return;
     }
   }, [error]);

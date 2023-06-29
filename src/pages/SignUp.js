@@ -42,7 +42,7 @@ const SignUp = () => {
 
   return (
     <section className="bg-rose-100 min-h-screen flex flex-col">
-      <RHelmet title="Sign Up : Mine Recipes" content={"Mine Recipe Sign Up page "} />
+      <RHelmet title="Sign Up : Mine Recipes" content={"Mine Recipes Sign Up page "} />
       <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
         <form
           onSubmit={handleSubmit}

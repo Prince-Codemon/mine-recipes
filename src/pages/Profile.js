@@ -12,6 +12,7 @@ import { toast } from "react-hot-toast";
 import { useGetUserRecipesQuery } from "../store/services/recipeService";
 import { AiFillEdit, AiFillEye } from "react-icons/ai";
 import DeleteModal from "../components/DeleteModal";
+import Spinner from "../components/Spinner";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -108,28 +109,7 @@ const Profile = () => {
             </div>
 
             <div className="w-full md:w-9/12 mx-2 ">
-              {/* <!-- Post tab --> */}
-              <div className="bg-rose-100  pt-0 shadow-sm rounded-sm">
-                {/* <div className="flex items-center">
-                  <div>
-                    
-                    {!isLoading && recipes?.length < 0 && (
-                      <p className="text-center my-4 text-sm font-medium text-gray-400">
-                        No Recipes yet !
-                      </p>
-                    )}
-                    <div className="w-full flex flex-wrap  justify-center gap-2 items-stretch">
-                      {recipes?.recipes?.map((recipe) => (
-                        <RecipeCard
-                          recipe={recipe}
-                          key={recipe._id}
-                          controls={true}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div> */}
-              </div>
+              
 
               <div className="relative overflow-x-auto bg-rose-100 w-full shadow-md sm:rounded-lg ">
                 <div className="flex items-center font-semibold text-gray-900 leading-8 mb-3">
@@ -181,6 +161,19 @@ const Profile = () => {
                     </tr>
                   </thead>
                   <tbody>
+                    {
+                      isLoading && (
+                        <tr>
+                          <td
+                            colSpan={4}
+                            className="text-center my-4 text-sm font-medium text-gray-700"
+                          >
+                            <Spinner/>
+                          </td>
+                        </tr>
+                      )
+                      
+                    }
                     {!isLoading && recipes?.recipes?.length > 0 ? (
                       recipes?.recipes?.map((recipe) => (
                         <tr
