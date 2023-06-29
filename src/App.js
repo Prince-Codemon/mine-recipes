@@ -10,7 +10,7 @@ import NFPage from "./pages/NFPage";
 import Profile from "./pages/Profile";
 import EditProfile from "./pages/EditProfile";
 import {Toaster} from 'react-hot-toast'
-import "react-toastify/dist/ReactToastify.css";
+
 import { NotLogin, User } from "./Routes";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
